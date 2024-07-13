@@ -1,11 +1,11 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
+import { Tilt } from "react-tilt";
 
 function Card({ name = "Title", description = "description", imageUrl }) {
   const defaultOptions = {
     reverse: false, // reverse the tilt direction
-    max: 5, // max tilt rotation (degrees)
-    perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+    max: 35, // max tilt rotation (degrees)
+    perspective: 800, // Transform perspective, the lower the more extreme the tilt gets.
     scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
     speed: 1000, // Speed of the enter/exit transition
     transition: true, // Set a transition on enter/exit.
@@ -15,9 +15,9 @@ function Card({ name = "Title", description = "description", imageUrl }) {
   };
 
   return (
-    <Tilt gyroscope={true} perspective={800}>
+    <Tilt options={defaultOptions} >
       <div class="max-w-sm min-h-[550px]  justify-between ms bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
-        <img class="rounded-t-lg" src={imageUrl} alt="" className="w-96 h-80" />
+          <img class="rounded-t-lg" src={imageUrl} alt="" className="w-96 h-80"/>
         <div class="p-5">
           <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
