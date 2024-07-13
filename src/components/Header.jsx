@@ -48,7 +48,7 @@ function Header() {
             <div class="flex flex-shrink-0 items-center">
               <img
                 class="h-8 w-auto"
-                src="src\assets\logo.jpg"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Communiqu%C3%A9_logo.jpg"
                 alt="Your Company"
               />
             </div>
@@ -115,7 +115,6 @@ function Header() {
                 >
                   <span class="absolute -inset-1.5"></span>
                   <span class="sr-only">Open user menu</span>
-                  
                 </button>
               </div>
             </div>
